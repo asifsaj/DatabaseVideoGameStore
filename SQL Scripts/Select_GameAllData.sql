@@ -6,9 +6,8 @@ FROM Game
 /*ESRB Rating*/
 left JOIN ESRB_Rating ON Game.RatingID = ESRB_Rating.RatingID
 
-/*Viewing Console*/
-left JOIN ConsoleGameJunction ON Game.GameID = ConsoleGameJunction.GameID
-left join Console on Console.ConsoleID = ConsoleGameJunction.ConsoleID
+/*Console*/
+left join Console on Console.ConsoleID = Game.ConsoleID
 
 /*Genre*/
 left JOIN GenreGameJunction ON Game.GameID = GenreGameJunction.GameID
