@@ -2,7 +2,7 @@ use GameDatabase
 
 INSERT INTO Company (CompanyName, FoundedYear, Website)
 VALUES (
-	'Bethesda',
-	1986, 
-	'https://bethesda.net/en/dashboard'
+	'Electronic Arts',
+	1982, 
+	'https://www.ea.com/'
 	) ; 
