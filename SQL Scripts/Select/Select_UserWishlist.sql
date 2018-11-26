@@ -13,5 +13,5 @@ left JOIN ESRB_Rating ON Game.RatingID = ESRB_Rating.RatingID
 /*Console*/
 left JOIN Console ON Console.ConsoleID = Game.ConsoleID
 
-ORDER BY GameReleaseDate desc;
+ORDER BY UserName desc;
 

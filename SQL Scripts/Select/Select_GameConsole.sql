@@ -9,7 +9,7 @@ left JOIN ESRB_Rating ON Game.RatingID = ESRB_Rating.RatingID
 /*Console*/
 left join Console on Console.ConsoleID = Game.ConsoleID
 
-Where Console.ConsoleName = 'PC'
+Where Console.ConsoleName LIKE '%%'
 
 ORDER BY GameReleaseDate desc;
 

@@ -34,16 +34,17 @@ Create Table Game
 	RatingID int, /*Can only have one ESRB rating*/
 	GamePrice float,
 	Quantity int DEFAULT 0,
+	ConsoleID int
 
 	/*GenreID int NOT NULL,*/ 
-	/*ConsoleID int NOT NULL,*/ /*These 3 aren't used as they are connected via Junction Table*/
+	/*These 2 aren't used as they are connected via Junction Table*/
 	/*CompanyID int NOT NULL,*/ 
 );
 
 Create Table ESRB_Rating
 (
 	RatingID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
-	RatingName nvarchar(1) NOT NULL,
+	RatingName nvarchar(10) NOT NULL,
 	RatingDescription nvarchar(255),
 );
 
@@ -92,9 +93,10 @@ Create Table CompanyGameJunction
 	CompanyID int, 
 );
 
+/*ConsoleGameJunction not needed anymore
 Create Table ConsoleGameJunction
 (
 	ConsoleGameID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
 	GameID int,
 	ConsoleID int,
-);
+);*/

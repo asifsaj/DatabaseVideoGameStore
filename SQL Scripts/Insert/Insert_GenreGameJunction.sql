@@ -2,8 +2,8 @@ use GameDatabase
 
 INSERT INTO GenreGameJunction (GameID, GenreID)
 VALUES (
-	5,
-	4
+	13,
+	7
 	) ;
 	
 	/*Important Genre IDs

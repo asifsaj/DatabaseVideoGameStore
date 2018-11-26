@@ -1,5 +1,5 @@
 use GameDatabase
 
 UPDATE Company
-SET AddressID = 5
-WHERE CompanyID = 4
+SET Company.AddressID = 11
+WHERE CompanyID = 7

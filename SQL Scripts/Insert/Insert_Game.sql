@@ -2,12 +2,12 @@ use GameDatabase
 
 INSERT INTO Game (GameName, GameReleaseDate, Quantity, GamePrice, RatingID, ConsoleID)
 VALUES (
-	'Dragon Age: Inquisition', 
-	'2014-11-18',
-	42,
-	19.99, 
-	5,
-	3
+	'Spider-Man',				/*Title*/
+	'2018-09-07',				/*Release Date*/
+	36,							/*Quantity*/
+	59.88,						/*Price*/
+	4,							/*Rating ID*/
+	3							/*Console ID*/
 	) ; 
 
 	/*ESRB Rating IDs

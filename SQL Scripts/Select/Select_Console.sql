@@ -5,5 +5,5 @@ From Console
 
 left JOIN Company ON Console.CompanyID = Company.CompanyID
 
-
+WHERE ConsoleName = 'Console Name'
 ;

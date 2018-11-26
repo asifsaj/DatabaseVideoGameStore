@@ -1,9 +1,10 @@
 use GameDatabase
 
-INSERT INTO AddressBook (City, Country)
+INSERT INTO AddressBook (Street, City, StateName)
 VALUES (
-	'Tokyo',
-	'Japan'
+	'1111 Test St',
+	'Houston',
+	'TX'
 	) 
 
 	;
